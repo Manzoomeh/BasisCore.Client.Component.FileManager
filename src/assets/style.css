@@ -1,0 +1,279 @@
+
+div[data-fm-id="main"] {
+    position: relative;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+span[data-fm-tree="title"] {
+    font-family: 'arial';
+    font-size: 14px;
+}
+div[data-fm-tree="tree"] {
+    height: 100%;
+    float: left;
+    width: 16.5%;
+    min-height: 300px;
+    border-right: 1px solid #000;
+    background: #35414f;
+    color: #fff;
+    padding-top: 20px;
+    line-height: 30px;
+}
+div[data-fm-tree="tree"] ul {
+    padding-left: 20px;
+}
+div[data-fm-view="content"] {
+    width: 100%;
+    border: 1px solid var(--light_gray);
+    border-radius: 5px;
+    background-color: #fff;
+}
+.clr {
+    clear: both
+}
+div[data-fm-container="container"] {
+    width: 83.4%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+div[data-fm-view="controller"] {
+    border-bottom: 1px solid #eee;
+}
+div[data-fm-controller="body"] {
+    border: 1px solid var(--light_gray);
+    border-radius: 5px;
+    background-color: #fff;
+}
+div[data-fm-view="controller"] button {
+    float: right;
+    margin: 10px;
+    font-family: 'arial';
+    font-size: 13px;
+    background-color: rgb(243, 241, 241);
+    border-radius: 3px;
+    border: 1px solid rgb(107, 107, 107);
+}
+span[data-fm-tree="expand"] {
+    margin-left: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 10px;
+}
+div[data-fm-view="view"] {
+    padding: 10px;
+}
+div[data-fm-view="view"] table {
+    width: 100%;
+}
+div[data-fm-controller="arrowKey"] {
+    width: 60px;
+    float: left;
+    height: 30px;
+    direction: ltr;
+    text-align: left;
+}
+div[data-fm-controller="arrowKey"] button {
+    margin: 3px;
+    cursor: pointer;
+}
+div[data-fm-path="path"] {
+    line-height: 30px;
+    width: calc(100% - 90px);
+    float: left;
+}
+div[data-fm-path="path"] span {
+    margin-left: 3px;
+}
+div[data-fm-path="path"] div {
+    float: left;
+}
+div[data-fm-view="items"] {
+    width: 19%;
+    float: left;
+    text-align: center;
+    height: 120px;
+    padding: 10px;
+    margin: 2%;
+    background: rgb(244, 244, 244);
+    border-radius: 5px;
+}
+td img {
+    margin-right: 10px;
+    margin-bottom: -3px;
+    ;
+}
+div[data-fm-path="startPath"] {
+    color: rgb(182, 67, 13);
+}
+span[data-fm-tree-isSelected="true"] {
+    background-color: #657a97;
+}
+
+div[data-fm-folderDialogBox="container"] {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    display: none;
+    right: 0;
+}
+div[data-fm-fileDialogBox="container"] {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    display: none;
+    right: 0;
+}
+div[data-fm-dialogBox="addFolder"] {
+    margin: 0 auto;
+    width: 350px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 3px;
+    text-align: center;
+}
+div[data-fm-dialogBox="addFile"] {
+    margin: 0 auto;
+    width: 350px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 3px;
+    text-align: center;
+}
+div[data-fm-dialogBox="addFolder"] form, div[data-fm-dialogBox="addFile"] form {
+    padding: 15px 20px 20px 20px;
+}
+div[data-fm-dialogBox="addFolder"] input, div[data-fm-dialogBox="addFile"] input {
+    border: 1px solid rgb(49, 49, 49);
+    height: 25px;
+    line-height: 25px;
+    color: #333;
+    width: 90%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+div[data-fm-dialogBox="addFolder"] textarea {
+    border: 1px solid rgb(49, 49, 49);
+    height: 50px;
+    line-height: 25px;
+    color: #333;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+div[data-fm-folderDialogBox="closeBox"], div[data-fm-fileDialogBox="closeBox"] {
+    background-color: rgb(228, 228, 228);
+    padding: 3px;
+}
+div[data-fm-folderDialogBox="close"], div[data-fm-fileDialogBox="close"] {
+    border: 1px solid #000;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    cursor: pointer;
+}
+div[data-fm-folderDialogBox="background"], div[data-fm-fileDialogBox="background"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+button[data-fm-dialogBox-btn="createFolder"], button[data-fm-dialogBox-btn="addFile"] {
+    float: right;
+}
+div[data-fm-user="permission"] {
+    float: left;
+    margin: 10px;
+}
+div[data-fm-user="permission"] span {
+    margin-right: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+hr {
+    margin: 10px 0;
+    color: #eee;
+}
+div[data-fm-disabled="true"] {
+    color: #ccc;
+    cursor: inherit !important;
+}
+a[data-fm-view-download="icon"] {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url(images/download_icon.png);
+}
+div[data-fm-view-uploadDate="uploadDate"] {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+div[data-fm-view-size="size"] {
+    font-size: 12px;
+    float: right;
+}
+div[data-fm-view-size="size"] span {
+    font-size: 12px;
+}
+div[data-fm-view-url="url"] {
+    font-size: 12px;
+    float: left;
+}
+
+div[data-fm-view="controller"] button {
+    color: var(--dark_gray);
+    background-color: #fff;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 5px;
+    color: var(--dark_gray);
+    text-align: center;
+    cursor: pointer;
+}
+button i {
+    font-size: 22px !important;
+    display: block !important;
+}
+div[data-fm-view="view"] table {
+    width: 100%;
+    color: var(--dark_gray);
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+div[data-fm-view="view"] table .textleft {
+    text-align: left;
+    padding-left: 30px;
+}
+div[data-fm-view="view"] table th:first-child {
+    border-top-right-radius: 3px;
+}
+div[data-fm-view="view"] table th {
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+    background-color: var(--light_gray);
+}
+div[data-fm-view="view"] table td {
+    padding: 10px 5px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+div[data-fm-view="view"] table tr {
+    border-bottom: 1px solid var(--light_gray);
+}
+div[data-fm-view="view"] table tr:nth-child(2n+1) td {
+    background-color: var(--vlight_gray);
+}
+div[data-fm-view="view"] table .textCenter {
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'LineIcons';
+    src: url('../fonts/LineIcons.eot');
+    src: url('../fonts/LineIcons.eot') format('embedded-opentype'), url('../fonts/LineIcons.woff2') format('woff2'), url('../fonts/LineIcons.woff') format('woff'), url('../fonts/LineIcons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    box-sizing: border-box;
+    font-family: 'arial';
+    font-size: 14px;
+}
+body {
+    background: #f9f9f9;
+}
+:root {
+ --white: #fff;
+ --vlight_gray: #f8f9fa;
+ --light_gray: #eee;
+ --gray: #bcbcbc;
+}
+body span, body input, body div {
+    font-family: 'arial';
+    font-size: 14px;
+}
+ul {
+    list-style: none;
+}
+.widget_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--light_gray);
+    border-radius: 5px;
+    direction: ltr;
+    text-align: left;
+    font-size: 14px;
+    background-color: var(--white);
+    height: 100%;
+    overflow: hidden;
+}
+.lni {
+    display: inline-block;
+    font: normal normal normal 1em/1 'LineIcons';
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.lni-cloud-sync::before {
+    content: "\ea67";
+}
+.lni-list::before {
+    content: "\eb16";
+}
+.lni-grid-alt::before {
+    content: "\ead5";
+}
+.lni-add-files::before {
+    content: "\ea03";
+}
+.lni-folder::before {
+    content: "\ead2";
+}
+
